@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hotels>
+  <Hotel id="H001" _Rating="4.2">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address _NearestAirport="Sky Harbor">
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+  <Hotel id="H002">
+    <Name>Marriott</Name>
+    <Phone>480-123-4567</Phone>
+    <Address>
+      <Number>22</Number>
+      <Street>Main St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85004</Zip>
+    </Address>
+  </Hotel>
+  <!-- Add at least 8 more hotel entries following the same structure -->
+</Hotels>
