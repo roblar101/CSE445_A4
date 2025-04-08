@@ -7,9 +7,9 @@ namespace ConsoleApp1
 {
     public class Program
     {
-        public static string xmlURL = "Hotels.xml";
-        public static string xmlErrorURL = "HotelsErrors.xml";
-        public static string xsdURL = "Hotels.xsd";
+        public static string xmlURL = "https://roblar101.github.io/CSE445_A4/Hotels.xml";
+        public static string xmlErrorURL = "https://roblar101.github.io/CSE445_A4/HotelsErrors.xml";
+        public static string xsdURL = "https://roblar101.github.io/CSE445_A4/Hotels.xsd";
 
         public static void Main(string[] args)
         {
