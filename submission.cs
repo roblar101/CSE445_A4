@@ -7,33 +7,32 @@ namespace ConsoleApp1
 {
     public class Program
     {
-        
         public static string xmlURL = "Hotels.xml";
         public static string xmlErrorURL = "HotelsErrors.xml";
         public static string xsdURL = "Hotels.xsd";
 
         public static void Main(string[] args)
         {
-            // verify the valid xml file
+            // 1) verify the valid xml file
             string result = Verification(xmlURL, xsdURL);
             Console.WriteLine("verification of valid xml:");
             Console.WriteLine(result);
 
-            // verify the erronous xml file
+            // 2) verify the erronous xml file
             result = Verification(xmlErrorURL, xsdURL);
             Console.WriteLine("verification of erronous xml:");
             Console.WriteLine(result);
 
-            // convert the valid xml to json and display the outpt
+            // 3) convert the valid xml to json and show the output
             result = Xml2Json(xmlURL);
             Console.WriteLine("xml to json conversion:");
             Console.WriteLine(result);
 
-            // pause the console so u can see the output befor it closes.
+            // pause the console so u can read the output before it closes
             Console.ReadLine();
         }
 
-        // this method validates an xml file against an xsd.
+        // this method checks an xml file against an xsd file and returns the errors or "no error"
         public static string Verification(string xmlUrl, string xsdUrl)
         {
             try
@@ -61,8 +60,8 @@ namespace ConsoleApp1
             }
         }
 
-        // this method converts an xml file to a json string using newtonsoft.json.
-        // I use the serializexmlnode method with no extra parameters to avoid any confusing issues.
+        // this method converts an xml file to a json string using newtonsoft.json
+        // we use the basic serializexmlnode overload to avoid any ambiguous issues
         public static string Xml2Json(string xmlUrl)
         {
             try
@@ -79,5 +78,6 @@ namespace ConsoleApp1
         }
     }
 }
+
 
 
