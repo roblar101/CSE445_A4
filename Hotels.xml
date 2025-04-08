@@ -12,7 +12,8 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
-  <Hotel id="H002">
+
+  <Hotel id="H002" _Rating="4.0">
     <Name>Marriott</Name>
     <Phone>480-123-4567</Phone>
     <Address>
@@ -23,6 +24,104 @@
       <Zip>85004</Zip>
     </Address>
   </Hotel>
-  <!-- Add at least 8 more hotel entries following the same structure -->
+
+  <Hotel id="H003" _Rating="3.8">
+    <Name>Hilton</Name>
+    <Phone>602-555-1234</Phone>
+    <Address>
+      <Number>33</Number>
+      <Street>W Camelback Rd</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85014</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel id="H004" _Rating="4.1">
+    <Name>Hyatt</Name>
+    <Phone>602-555-2345</Phone>
+    <Address _NearestAirport="Sky Harbor">
+      <Number>45</Number>
+      <Street>E Van Buren St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85006</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel id="H005">
+    <Name>Holiday Inn</Name>
+    <Phone>480-555-6789</Phone>
+    <Address>
+      <Number>88</Number>
+      <Street>N Scottsdale Rd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85254</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel id="H006" _Rating="4.5">
+    <Name>Residence Inn</Name>
+    <Phone>800-555-8080</Phone>
+    <Phone>602-555-8080</Phone>
+    <Address _NearestAirport="Sky Harbor">
+      <Number>101</Number>
+      <Street>S Mill Ave</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel id="H007">
+    <Name>Comfort Suites</Name>
+    <Phone>602-555-1111</Phone>
+    <Address>
+      <Number>250</Number>
+      <Street>W Broadway Rd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85282</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel id="H008" _Rating="3.9">
+    <Name>Best Western</Name>
+    <Phone>602-555-2222</Phone>
+    <Phone>800-555-2222</Phone>
+    <Address>
+      <Number>312</Number>
+      <Street>E Washington St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85034</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel id="H009">
+    <Name>Motel 6</Name>
+    <Phone>480-555-3333</Phone>
+    <Address>
+      <Number>60</Number>
+      <Street>W University Dr</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel id="H010" _Rating="4.3">
+    <Name>DoubleTree</Name>
+    <Phone>480-555-4444</Phone>
+    <Address _NearestAirport="Sky Harbor">
+      <Number>210</Number>
+      <Street>S Priest Dr</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85284</Zip>
+    </Address>
+  </Hotel>
 </Hotels>
+
 
