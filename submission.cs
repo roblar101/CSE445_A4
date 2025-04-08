@@ -7,30 +7,33 @@ namespace ConsoleApp1
 {
     public class Program
     {
-        // My GitHub URL's
-        public static string xmlURL = "https://roblar101.github.io/CSE445_A4/Hotels.xml";
-        public static string xmlErrorURL = "https://roblar101.github.io/CSE445_A4/HotelsErrors.xml";
-        public static string xsdURL = "https://roblar101.github.io/CSE445_A4/Hotels.xsd";
+        
+        public static string xmlURL = "Hotels.xml";
+        public static string xmlErrorURL = "HotelsErrors.xml";
+        public static string xsdURL = "Hotels.xsd";
 
         public static void Main(string[] args)
         {
-            // Testing for valid xml file
+            // verify the valid xml file
             string result = Verification(xmlURL, xsdURL);
-            Console.WriteLine("Valid XML Verification:");
+            Console.WriteLine("verification of valid xml:");
             Console.WriteLine(result);
 
-            // Test of the erroneous xml file
+            // verify the erronous xml file
             result = Verification(xmlErrorURL, xsdURL);
-            Console.WriteLine("Erroneous XML Verification:");
+            Console.WriteLine("verification of erronous xml:");
             Console.WriteLine(result);
 
-            // Convert valid xml to json and display  output
+            // convert the valid xml to json and display the outpt
             result = Xml2Json(xmlURL);
-            Console.WriteLine("XML to JSON Conversion:");
+            Console.WriteLine("xml to json conversion:");
             Console.WriteLine(result);
+
+            // pause the console so u can see the output befor it closes.
+            Console.ReadLine();
         }
 
-        //  Validate the xml file against the  xsd file
+        // this method validates an xml file against an xsd.
         public static string Verification(string xmlUrl, string xsdUrl)
         {
             try
@@ -58,17 +61,15 @@ namespace ConsoleApp1
             }
         }
 
-        // Convert the xml file to json.
-        // removed the ambiguous perameter
+        // this method converts an xml file to a json string using newtonsoft.json.
+        // I use the serializexmlnode method with no extra parameters to avoid any confusing issues.
         public static string Xml2Json(string xmlUrl)
         {
             try
             {
                 XmlDocument doc = new XmlDocument();
                 doc.Load(xmlUrl);
-                //
-                // indicates whether to omit the root object.
-                string jsonText = JsonConvert.SerializeXmlNode(doc, true);
+                string jsonText = JsonConvert.SerializeXmlNode(doc);
                 return jsonText;
             }
             catch (Exception ex)
@@ -78,4 +79,5 @@ namespace ConsoleApp1
         }
     }
 }
+
 
